@@ -1,6 +1,8 @@
 package ic.doc;
 
 import ic.doc.catalogues.BritishLibraryCatalogue;
+import ic.doc.catalogues.category;
+
 import java.util.List;
 
 public class BookSearchQuery {
@@ -36,6 +38,6 @@ public class BookSearchQuery {
     if (date2 != null) {
       query.append("PUBLISHEDBEFORE(").append(date2).append(") ");
     }
-    return BritishLibraryCatalogue.getInstance().searchFor(query.toString());
+    return category.getInstance().searchFor(query.toString());
   }
 }
